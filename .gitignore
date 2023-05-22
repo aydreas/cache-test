@@ -1,0 +1,4 @@
+# Project exclude paths
+/api/dist/
+/api/src/data.js
+/api/src/index.js

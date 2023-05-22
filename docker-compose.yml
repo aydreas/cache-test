@@ -1,0 +1,13 @@
+services:
+  api:
+    image: node:18
+    working_dir: /var/www
+    volumes:
+      - ./api:/var/www
+    ports:
+      - 4000:4000
+    command: yarn start
+  redis:
+    image: redis:7
+    ports:
+      - 6379:6379
